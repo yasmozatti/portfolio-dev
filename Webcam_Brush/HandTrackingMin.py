@@ -17,6 +17,8 @@ while True:
 
     if results.multi_hand_landmarks:
         for handLms in results.multi_hand_landmarks:
+            for id, lm in enumerate(handLms.landmark):
+                print(id, lm)
             mpDraw.draw_landmarks(img, handLms, mpHands.HAND_CONNECTIONS)
     cTime = time.time()
     fps = 1/(cTime-pTime)
