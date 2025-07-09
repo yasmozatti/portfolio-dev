@@ -12,9 +12,9 @@ for imPath in myList:
     overlayList.append(image)
 
 header = overlayList[0]
-drawColor = (255, 0, 255)
+drawColor = (0, 0, 0)
 brushThickness = 15
-eraserThickness = 50
+eraserThickness = 60
 
 cap = cv2.VideoCapture(0)  # Alterado para câmera 0
 cap.set(3, 1280)
@@ -42,13 +42,13 @@ while True:
             if y1 < 125:
                 if 250 < x1 < 450:
                     header = overlayList[0]
-                    drawColor = (255, 255, 0)
+                    drawColor = (0, 217, 215)
                 elif 550 < x1 < 750:
                     header = overlayList[1]
                     drawColor = (159, 95, 159)
                 elif 800 < x1 < 950:
                     header = overlayList[2]
-                    drawColor = (0, 127, 255)
+                    drawColor = (255, 20, 0)
                 elif 1050 < x1 < 1200:
                     header = overlayList[3]
                     drawColor = (0, 0, 0)
