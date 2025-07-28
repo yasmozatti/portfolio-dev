@@ -1,9 +1,7 @@
-class Book:
-    id : int
-    name : str 
-    author : str 
-    year : int
+from DTOs.book_dto import BookDTO
+import DTOs
 
+class Book:
     def __init__(self, id, name, author, year):
         self.id = id
         self.name = name
@@ -11,4 +9,11 @@ class Book:
         self.year = year
 
     def to_dto(self):
-        pass
+        return BookDTO(
+            id=self.id,
+            name=self.name,
+            author=self.author,
+            year=self.year
+        )
+
+    
