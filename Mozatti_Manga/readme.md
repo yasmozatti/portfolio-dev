@@ -1,1 +1,0 @@
-Esse será meu primeiro projeto utilizando frameworks de python para o desenvolvimento de um site ou app de leitura de mangás de forma ilustrativa (não contendo o real conteúdo dos mangás por motivos de direitors autorais)
